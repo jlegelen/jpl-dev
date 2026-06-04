@@ -6,19 +6,25 @@ export const productos = [
     resumen:
       "Sitios web modernos, rápidos y optimizados para empresas, profesionales y emprendimientos.",
     descripcion:
-      "Diseño y desarrollo de sitios web profesionales adaptados a cada negocio. Ideal para mostrar servicios, generar confianza, captar consultas y mejorar la presencia digital. Incluye diseño responsive, integración con WhatsApp, formularios de contacto y optimización básica para buscadores.",
+      "Diseñamos y desarrollamos sitios web profesionales adaptados a cada negocio. Incluye diseño responsive, formularios de contacto, integración con WhatsApp, optimización para buscadores y una imagen moderna para potenciar la presencia digital de tu empresa.",
 
     features: [
-      "Diseño moderno y profesional",
+      "Diseño personalizado",
       "Adaptado a celulares y tablets",
-      "Formulario de contacto",
       "Integración con WhatsApp",
+      "Formularios de contacto",
       "Optimización SEO básica",
-      "Secciones para servicios o productos",
       "Hosting y dominio opcional",
+      "Panel autoadministrable (opcional)",
     ],
 
-    imagenes: [],
+    imagenes: [
+      "/img/web-1.png",
+      "/img/web-2.png",
+      "/img/web-3.png",
+      "/img/web-4.png",
+      "/img/web-5.png",
+    ],
   },
 
   {

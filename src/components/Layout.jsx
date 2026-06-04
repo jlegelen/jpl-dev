@@ -7,7 +7,6 @@ export default function Layout() {
         <div className="container header__inner">
           <div className="brand">
             <div className="brand__text">
-              <div className="brand__name">jpl-developments</div>
               <div className="brand__tag">Productos web · Empresas & organizaciones</div>
             </div>
           </div>

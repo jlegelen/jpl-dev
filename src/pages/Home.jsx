@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const EMAIL = "TU_MAIL@DOMINIO.com"; // <-- cambiá esto
+const EMAIL = "jpldevelopments@gmail.com"; // <-- cambiá esto
 
 export default function Home() {
   const mailto = `mailto:${EMAIL}?subject=${encodeURIComponent("Consulta jpl-dev")}`;
@@ -47,92 +47,148 @@ export default function Home() {
       </section>
 
       <section className="card">
-        <div className="sectionHead">
-          <div>
-            <h2 className="h2">Productos y soluciones</h2>
-            <p className="muted" style={{ margin: 0 }}>
-              Software pensado para resolver necesidades reales de gestión, ventas y presencia digital.
-            </p>
-          </div>
-          <Link className="btn btn--sm" to="/productos">
-            Ver todos →
-          </Link>
-        </div>
+  <div className="sectionHead">
+    <div>
+      <h2 className="h2">Productos y soluciones</h2>
+      <p className="muted" style={{ margin: 0 }}>
+        Software pensado para resolver necesidades reales de gestión, ventas y presencia digital.
+      </p>
+    </div>
 
-        <div className="grid3">
-          <div className="card productLite">
-            <div className="pill">Reservas / Turnos</div>
-            <h3 className="h3" style={{ marginTop: 10 }}>
-              Sistema de Reservas
-            </h3>
-            <p className="muted">
-              Calendario de turnos, disponibilidad automática, panel de usuario
-              y administración completa para negocios y servicios.
-            </p>
-            <div className="row">
-              <Link className="btn btn--sm btn--primary" to="/productos/reservas">
-                Ver detalle
-              </Link>
-              <a
-                className="btn btn--sm"
-                href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-                  "Demo Sistema de Reservas (jpl-dev)"
-                )}`}
-              >
-                Pedir demo
-              </a>
-            </div>
-          </div>
+    <Link className="btn btn--sm" to="/productos">
+      Ver todos →
+    </Link>
+  </div>
 
-          <div className="card productLite">
-            <div className="pill">Ventas / Cotizaciones</div>
-            <h3 className="h3" style={{ marginTop: 10 }}>
-              Sistema de Presupuestos
-            </h3>
-            <p className="muted">
-              Creación rápida de presupuestos profesionales con generación de PDF,
-              organización comercial y envío directo por WhatsApp.
-            </p>
-            <div className="row">
-              <Link className="btn btn--sm btn--primary" to="/productos/presupuestos">
-                Ver detalle
-              </Link>
-              <a
-                className="btn btn--sm"
-                href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-                  "Demo Sistema de Presupuestos (jpl-dev)"
-                )}`}
-              >
-                Pedir demo
-              </a>
-            </div>
-          </div>
+  <div className="grid3">
 
-          <div className="card productLite">
-            <div className="pill">Tienda online / Ventas</div>
-            <h3 className="h3" style={{ marginTop: 10 }}>
-              Ecommerce
-            </h3>
-            <p className="muted">
-              Tienda online con catálogo, detalle de productos, carrito de compras
-              y experiencia pensada para vender de forma simple y profesional.
-            </p>
-            <div className="row">
-              <Link className="btn btn--sm btn--primary" to="/productos/ecommerce">
-                Ver detalle
-              </Link>
-              <a
-                className="btn btn--sm"
-                href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-                  "Consulta Ecommerce (jpl-dev)"
-                )}`}
-              >
-                Pedir demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="card productLite">
+      <div className="pill">Web / Presencia digital</div>
+
+      <h3 className="h3" style={{ marginTop: 10 }}>
+        Desarrollo de Sitios Web
+      </h3>
+
+      <p className="muted">
+        Sitios web modernos, rápidos y optimizados para celulares.
+        Diseño profesional, formularios de contacto, integración con
+        WhatsApp y posicionamiento en buscadores.
+      </p>
+
+      <div className="row">
+        <Link
+          className="btn btn--sm btn--primary"
+          to="/productos/sitios-web"
+        >
+          Ver detalle
+        </Link>
+
+        <a
+          className="btn btn--sm"
+          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
+            "Consulta Desarrollo Web (jpl-dev)"
+          )}`}
+        >
+          Pedir demo
+        </a>
+      </div>
+    </div>
+
+    <div className="card productLite">
+      <div className="pill">Reservas / Turnos</div>
+
+      <h3 className="h3" style={{ marginTop: 10 }}>
+        Sistema de Reservas
+      </h3>
+
+      <p className="muted">
+        Calendario de turnos, disponibilidad automática, panel de usuario
+        y administración completa para negocios y servicios.
+      </p>
+
+      <div className="row">
+        <Link
+          className="btn btn--sm btn--primary"
+          to="/productos/reservas"
+        >
+          Ver detalle
+        </Link>
+
+        <a
+          className="btn btn--sm"
+          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
+            "Demo Sistema de Reservas (jpl-dev)"
+          )}`}
+        >
+          Pedir demo
+        </a>
+      </div>
+    </div>
+
+    <div className="card productLite">
+      <div className="pill">Ventas / Cotizaciones</div>
+
+      <h3 className="h3" style={{ marginTop: 10 }}>
+        Sistema de Presupuestos
+      </h3>
+
+      <p className="muted">
+        Creación rápida de presupuestos profesionales con generación de PDF,
+        organización comercial y envío directo por WhatsApp.
+      </p>
+
+      <div className="row">
+        <Link
+          className="btn btn--sm btn--primary"
+          to="/productos/presupuestos"
+        >
+          Ver detalle
+        </Link>
+
+        <a
+          className="btn btn--sm"
+          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
+            "Demo Sistema de Presupuestos (jpl-dev)"
+          )}`}
+        >
+          Pedir demo
+        </a>
+      </div>
+    </div>
+
+    <div className="card productLite">
+      <div className="pill">Tienda online / Ventas</div>
+
+      <h3 className="h3" style={{ marginTop: 10 }}>
+        Ecommerce
+      </h3>
+
+      <p className="muted">
+        Tienda online con catálogo, detalle de productos, carrito de compras
+        y experiencia pensada para vender de forma simple y profesional.
+      </p>
+
+      <div className="row">
+        <Link
+          className="btn btn--sm btn--primary"
+          to="/productos/ecommerce"
+        >
+          Ver detalle
+        </Link>
+
+        <a
+          className="btn btn--sm"
+          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
+            "Consulta Ecommerce (jpl-dev)"
+          )}`}
+        >
+          Pedir demo
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       <section className="card">
         <div className="sectionHead">
