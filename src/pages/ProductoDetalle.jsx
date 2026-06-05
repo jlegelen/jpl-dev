@@ -91,13 +91,13 @@ export default function ProductoDetalle() {
 
         <div className="grid3">
           {p.features.map((f) => (
-            <div key={f} className="mini">
+            <div key={f.titulo} className="mini">
               <h3 className="h3" style={{ marginBottom: 8 }}>
-                {f}
+                {f.titulo}
               </h3>
+
               <p className="muted" style={{ margin: 0 }}>
-                Funcionalidad incluida para mejorar la operación, agilizar tareas
-                y ofrecer una solución profesional y escalable.
+                {f.descripcion}
               </p>
             </div>
           ))}
