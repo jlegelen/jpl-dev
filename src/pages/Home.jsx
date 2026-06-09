@@ -51,8 +51,9 @@ export default function Home() {
     <div>
       <h2 className="h2">Productos y soluciones</h2>
       <p className="muted" style={{ margin: 0 }}>
-        Software pensado para resolver necesidades reales de gestión, ventas y presencia digital.
+        Software pensado para resolver necesidades de gestión y ventas.
       </p>
+      <br/>
     </div>
 
     <Link className="btn btn--sm" to="/productos">
@@ -71,8 +72,8 @@ export default function Home() {
 
       <p className="muted">
         Sitios web modernos, rápidos y optimizados para celulares.
-        Diseño profesional, formularios de contacto, integración con
-        WhatsApp y posicionamiento en buscadores.
+        Diseño moderno , formularios de contacto e integración con
+        WhatsApp.
       </p>
 
       <div className="row">
@@ -133,7 +134,7 @@ export default function Home() {
       </h3>
 
       <p className="muted">
-        Creación rápida de presupuestos profesionales con generación de PDF,
+        Creación de presupuestos con generación de PDF,
         organización comercial y envío directo por WhatsApp.
       </p>
 
@@ -195,8 +196,9 @@ export default function Home() {
           <div>
             <h2 className="h2">Qué ofrezco</h2>
             <p className="muted" style={{ margin: 0 }}>
-              Desarrollo soluciones digitales orientadas a mejorar la gestión, vender más y profesionalizar tu negocio.
+              Desarrollo soluciones digitales orientadas a mejorar la gestión y profesionalizar tu negocio.
             </p>
+            <br/>
           </div>
         </div>
 
@@ -212,8 +214,7 @@ export default function Home() {
           <div className="mini">
             <h3 className="h3">Ecommerce</h3>
             <p className="muted">
-              Tiendas online preparadas para exhibir productos, facilitar compras
-              y acompañar el crecimiento comercial.
+              Tiendas online donde exhibir productos y facilitar compras.
             </p>
           </div>
 
@@ -221,7 +222,8 @@ export default function Home() {
             <h3 className="h3">Sistemas a medida</h3>
             <p className="muted">
               Soluciones personalizadas para reservas, presupuestos, clientes,
-              facturación, reportes y automatización de procesos.
+              facturación, reportes y automatización de procesos. A partir del software base se 
+              personaliza de acuerdo a las necesidades del cliente.
             </p>
           </div>
         </div>
@@ -234,6 +236,7 @@ export default function Home() {
             <p className="muted" style={{ margin: 0 }}>
               Una forma simple de implementar software útil y adaptable a cada operación.
             </p>
+            <br/>
           </div>
         </div>
 
@@ -241,7 +244,7 @@ export default function Home() {
           <div className="mini">
             <h3 className="h3">1. Análisis</h3>
             <p className="muted">
-              Revisamos tu necesidad: presencia web, ventas online o mejora de un
+              Dada la necesidad del cliente: presencia web, ventas online o mejora de un
               proceso interno.
             </p>
           </div>
@@ -271,6 +274,7 @@ export default function Home() {
             <p className="muted" style={{ margin: 0 }}>
               Herramientas pensadas para negocios, profesionales, técnicos y organizaciones.
             </p>
+            <br/>
           </div>
         </div>
 

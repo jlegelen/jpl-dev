@@ -422,4 +422,17 @@ a{
   .productShot{
     height:220px;
   }
+
+  .productLite .pill{
+    margin-bottom: 18px;
+  }
+  
+  .productLite .h3{
+    margin-top: 4px;
+    margin-bottom: 22px;
+  }
+
+  .productLite .muted{
+    line-height: 1.45;
+  }
 }
