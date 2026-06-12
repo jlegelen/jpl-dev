@@ -1,11 +1,23 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { productos } from "../data/productos.js";
 
-const EMAIL = "TU_MAIL@DOMINIO.com"; // <-- cambiá esto
+const EMAIL = "jpldevelopments@gmail.com"; // <-- cambiá esto
 
 export default function ProductoDetalle() {
   const { slug } = useParams();
   const p = productos.find((x) => x.slug === slug);
+  const [copiado, setCopiado] = useState(false);
+
+  const copiarEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopiado(true);
+      setTimeout(() => setCopiado(false), 2000);
+    } catch (err) {
+      console.error("No se pudo copiar:", err);
+    }
+  };
 
   if (!p) {
     return (
@@ -23,10 +35,6 @@ export default function ProductoDetalle() {
     );
   }
 
-  const mailto = `mailto:${EMAIL}?subject=${encodeURIComponent(
-    `Consulta sobre ${p.nombre} (jpl-dev)`
-  )}`;
-
   return (
     <div className="stack">
       <section className="card">
@@ -40,9 +48,9 @@ export default function ProductoDetalle() {
         </div>
 
         <div className="row">
-          <a className="btn btn--primary" href={mailto}>
-            Solicitar información
-          </a>
+          <button className="btn btn--primary" onClick={copiarEmail}>
+            {copiado ? "¡Copiado!" : "Solicitar información (Copiar email)"}
+          </button>
           <Link className="btn" to="/productos">
             Ver otros productos
           </Link>
@@ -144,9 +152,9 @@ export default function ProductoDetalle() {
             </p>
           </div>
 
-          <a className="btn btn--primary" href={mailto}>
-            Contactar
-          </a>
+          <button className="btn btn--primary" onClick={copiarEmail}>
+            {copiado ? "¡Copiado!" : "Contactar"}
+          </button>
         </div>
       </section>
     </div>

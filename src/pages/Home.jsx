@@ -1,9 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const EMAIL = "jpldevelopments@gmail.com"; // <-- cambiá esto
 
 export default function Home() {
-  const mailto = `mailto:${EMAIL}?subject=${encodeURIComponent("Consulta jpl-dev")}`;
+  const [copiadoId, setCopiadoId] = useState(null);
+
+  const copiarEmail = async (id) => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopiadoId(id);
+      setTimeout(() => setCopiadoId(null), 2000);
+    } catch (err) {
+      console.error("No se pudo copiar:", err);
+    }
+  };
 
   return (
     <div className="stack">
@@ -25,9 +36,9 @@ export default function Home() {
           <Link className="btn btn--primary" to="/productos">
             Ver productos
           </Link>
-          <a className="btn" href={mailto}>
-            Contactar por email
-          </a>
+          <button className="btn" onClick={() => copiarEmail("hero")}>
+            {copiadoId === "hero" ? "¡Copiado!" : "Contactar por email"}
+          </button>
         </div>
 
         <div className="hero__stats">
@@ -84,14 +95,12 @@ export default function Home() {
           Ver detalle
         </Link>
 
-        <a
+        <button
           className="btn btn--sm"
-          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-            "Consulta Desarrollo Web (jpl-dev)"
-          )}`}
+          onClick={() => copiarEmail("web")}
         >
-          Pedir demo
-        </a>
+          {copiadoId === "web" ? "¡Copiado!" : "Pedir demo"}
+        </button>
       </div>
     </div>
 
@@ -115,14 +124,12 @@ export default function Home() {
           Ver detalle
         </Link>
 
-        <a
+        <button
           className="btn btn--sm"
-          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-            "Demo Sistema de Reservas (jpl-dev)"
-          )}`}
+          onClick={() => copiarEmail("reservas")}
         >
-          Pedir demo
-        </a>
+          {copiadoId === "reservas" ? "¡Copiado!" : "Pedir demo"}
+        </button>
       </div>
     </div>
 
@@ -146,14 +153,12 @@ export default function Home() {
           Ver detalle
         </Link>
 
-        <a
+        <button
           className="btn btn--sm"
-          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-            "Demo Sistema de Presupuestos (jpl-dev)"
-          )}`}
+          onClick={() => copiarEmail("presupuestos")}
         >
-          Pedir demo
-        </a>
+          {copiadoId === "presupuestos" ? "¡Copiado!" : "Pedir demo"}
+        </button>
       </div>
     </div>
 
@@ -177,14 +182,12 @@ export default function Home() {
           Ver detalle
         </Link>
 
-        <a
+        <button
           className="btn btn--sm"
-          href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-            "Consulta Ecommerce (jpl-dev)"
-          )}`}
+          onClick={() => copiarEmail("ecommerce")}
         >
-          Pedir demo
-        </a>
+          {copiadoId === "ecommerce" ? "¡Copiado!" : "Pedir demo"}
+        </button>
       </div>
     </div>
 
@@ -341,14 +344,12 @@ export default function Home() {
             </p>
           </div>
 
-          <a
+          <button
             className="btn btn--primary"
-            href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-              "Consulta sobre desarrollo web, ecommerce o sistema (jpl-dev)"
-            )}`}
+            onClick={() => copiarEmail("final")}
           >
-            Contactar
-          </a>
+            {copiadoId === "final" ? "¡Copiado!" : "Contactar"}
+          </button>
         </div>
       </section>
     </div>
