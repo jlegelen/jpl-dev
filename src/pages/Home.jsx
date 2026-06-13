@@ -21,7 +21,7 @@ export default function Home() {
       <section className="hero hero--pro">
         
         <h1 className="hero__title">
-          Desarrollo <span className="grad">sitios web, ecommerce y sistemas</span> para
+          Desarrollamos <span className="grad">sitios web, ecommerce y sistemas</span> para
           mejorar procesos y hacer crecer negocios.
         </h1>
 
