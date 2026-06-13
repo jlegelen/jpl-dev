@@ -26,7 +26,7 @@ export default function Home() {
         </h1>
 
         <p className="hero__subtitle">
-          Creo soluciones digitales listas para usar y también adaptadas a medida:
+          Creamos soluciones digitales adaptadas a medida:
           páginas web profesionales, tiendas online, sistemas de reservas,
           presupuestos, facturación, reportes e integraciones. Enfoque en diseño,
           control, escalabilidad y resultados reales.
