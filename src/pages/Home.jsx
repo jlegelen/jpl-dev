@@ -217,7 +217,7 @@ export default function Home() {
           <div className="mini">
             <h3 className="h3">Ecommerce</h3>
             <p className="muted">
-              Tiendas online donde exhibir productos y facilitar compras.
+              Tienda online donde exhibir productos y facilitar compras.
             </p>
           </div>
 
