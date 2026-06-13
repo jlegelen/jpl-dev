@@ -93,7 +93,6 @@ export const productos = [
       "/img/reservas-4.png",
       "/img/reservas-5.png",
       "/img/reservas-6.png",
-      "/img/reservas-7.png",
     ],
   },
 
